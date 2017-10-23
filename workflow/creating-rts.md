@@ -28,3 +28,8 @@ Once deployed you should see a "Tutorials" checkbox in the
 Thank you,
 Ant.
 
+## Managing tickets
+
+To see the teams list of tickets please visit:
+https://portal.admin.canonical.com/q/comms
+
