@@ -47,7 +47,7 @@
         </nav>
       </header>
 
-      <aside class="p-sidebar" id="navigation">
+      <aside class="p-sidebar" id="docs-navigation">
         <div class="p-sidebar__banner u-hide--medium u-hide--large">
           <i class="p-sidebar__toggle p-icon--menu"></i>
         </div>
@@ -115,6 +115,19 @@
               </li>
             </ul>
           </nav>
+
+	  <script>
+	    // Select the active navigation item
+	    var navigation = document.getElementById('docs-navigation');
+            var links = navigation.getElementsByTagName('a');
+            var currentPage = window.location.pathname;
+            for (var i = 0; i < links.length; i++) {
+	      var link = links[i];
+	      if (link.getAttribute('href') === currentPage) {
+	        link.classList.add('is-active');
+	      }
+	    };
+          </script>
           <script>
             // Toggle mobile sidebar nav
             var toggle = document.querySelector('.p-sidebar__toggle');
